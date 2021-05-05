@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import PokemonList from "./PokemonList";
 import axios from 'axios'; 
 import Pagination from './Pagination';
+import Button from '@material-ui/core/Button'; 
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
 
   return (
     <>
+    <Button href="https://alice.com/" size="large" style={{fontSize: 24}} variant="contained" color = "primary">
+      Hello Alice
+    </Button>
     <PokemonList pokemon = {pokemon} />
     <Pagination 
     goToNextPage={nextPageUrl ? goToNextPage: null} 
